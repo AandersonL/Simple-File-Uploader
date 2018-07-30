@@ -68,6 +68,8 @@ class Api(object):
         url = "http://{}:8000/{}".format(LOCAL_IP, random_name)
         cherrypy.serving.response.headers['Content-Type'] = 'application/json'
         if file != None:
+            if not os.path.exists('uploads'):
+                os.mkdir('uploads')
             obj = open("uploads/"+random_name,"wb")
             shutil.copyfileobj(file.file, obj)
             obj.close()
