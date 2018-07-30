@@ -10,7 +10,7 @@ import shutil
 
 '''
 RANDOM_LEN = 6
-LOCAL_IP = None
+LOCAL_IP = '0.0.0.0'
 API_KEY = None
 
 
@@ -90,13 +90,13 @@ class Api(object):
 
 if __name__ == '__main__':
     api_key = None
-    ip = '0.0.0.0'
+
 
     if len(sys.argv) > 1:
         API_KEY = sys.argv[1] 
     conf = {
         'global': {
-            'server.socket_host': ip,
+            'server.socket_host': LOCAL_IP,
             'server.socket_port': 8000,
             'environment': 'production',
             'log.screen': False,
