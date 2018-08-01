@@ -32,13 +32,6 @@ python3 key.py > key && python3 api.py $(cat key)
 
 ### Request
 
-This is the request structure expected:
-```javascript
-header: {
-  Api-Key: <api>,
-  data: file_data
-}
-```
 [Axios](https://github.com/axios/axios) example:
 ```javascript
 axios({
