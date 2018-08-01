@@ -1,7 +1,7 @@
 # Simple File Uploader
 
 
-This is a simple python script writed with [cherrypy](https://cherrypy.org/) to upload files based on api keys requests, it was used with [Segments](https://github.com/AandersonL/Segments-Android) project to upload and retrieve images from a remote server.
+This is a simple python script written with [cherrypy](https://cherrypy.org/) to upload files based on api keys requests, it was used with [Segments](https://github.com/AandersonL/Segments-Android) project to upload and retrieve images from a remote server.
 
 ### Setup
 
@@ -55,4 +55,4 @@ axios({
 The only response send back is the file url for future uses (download, image source or stream), there is only one route here, use GET to retrieve files and POST method to upload files.
 # Warning
 
-This is a simple file uploader only, its not recommend to use wildly in a huge application, just plug-in in your server and use to upload your songs, videos and simple files, not sensitive data. enjoy :D 
+This is a simple file uploader only, its not recommend to use widely in a huge application, just plug-in in your server and use to upload your songs, videos and simple files, no sensitive data. enjoy :D 
